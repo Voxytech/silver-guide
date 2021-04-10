@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">silverguide</string>
+    <string name="author_name">Clément Lévêque</string>
+    <string name="project_year">2021</string>
+    <string name="project_title">Historique de localisation</string>
 </resources>
