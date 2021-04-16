@@ -7,6 +7,11 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
+    //Permet l'activation du viewBinding
+    buildFeatures {
+        viewBinding true
+    }
+
     defaultConfig {
         applicationId "com.eseo.silverguide"
         minSdkVersion 27
@@ -42,4 +47,9 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //permet d'ajouter la librairie suivante : https://github.com/afollestad/material-dialogs
+    implementation 'com.afollestad.material-dialogs:core:3.2.1'
+    implementation 'com.afollestad.material-dialogs:input:3.3.0'
+    implementation 'com.afollestad.material-dialogs:datetime:3.2.1'
+
 }
