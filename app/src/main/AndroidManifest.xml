@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.eseo.silverguide">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
@@ -10,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Silverguide">
-        <activity android:name=".ui.SettingsActivity"></activity>
+        <activity android:name=".ui.settings.SettingsItem"></activity>
+        <activity android:name=".ui.settings.SettingsActivity" />
+        <activity android:name=".ui.locallisation.LocalisationActivity" />
         <activity android:name=".ui.MainActivity" />
         <activity android:name=".ui.SplashScreen">
             <intent-filter>

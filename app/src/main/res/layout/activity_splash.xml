@@ -24,6 +24,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
         android:src="@drawable/image_loc"
+        android:contentDescription="image"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/project_title" />
 

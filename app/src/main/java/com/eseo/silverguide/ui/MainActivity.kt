@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.eseo.silverguide.R
 import com.eseo.silverguide.databinding.ActivityMainBinding
+import com.eseo.silverguide.ui.locallisation.LocalisationActivity
+import com.eseo.silverguide.ui.settings.SettingsActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,5 +26,13 @@ class MainActivity : AppCompatActivity() {
         // NOUVELLE METHODE --> Indique que l'on utilise le ViewBinding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.distance.setOnClickListener{
+            startActivity(LocalisationActivity.getStartIntent(this))
+        }
+        binding.settings.setOnClickListener{
+            startActivity(SettingsActivity.getStartIntent(this))
+        }
+
     }
 }
