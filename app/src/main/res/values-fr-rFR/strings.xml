@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="project_title">Localisation du club</string>
+    <string name="texteToast">Bonjour</string>
+    <string name="app_name" translatable="false">Localisation du club</string>
+    <string name="settings_app_param">Paramètres de l\'application</string>
+    <string name="settings_loc_param">Paramètres de localisation</string>
+    <string name="settings_eseo_location">Position de l\'ESEO</string>
+    <string name="settings_eseo_website">Site de l\'ESEO</string>
+    <string name="settings_info">Informations</string>
+    <string name="decline">Refuser</string>
+    <string name="accept">Accepter</string>
+    <string name="cancel">Annuler</string>
+    <string name="loc_refuse">Vous avez refusé la localisation !</string>
+    <string name="loc_accepte">Vous avez accepté la localisation !</string>
+    <string name="a_accepte">Vous avez accepté !</string>
+    <string name="a_refuse">Vous avez refusé !</string>
+    <string name="settings_contact">Me contacter par mail</string>
+</resources>

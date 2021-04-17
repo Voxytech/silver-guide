@@ -1,25 +1,24 @@
 <resources>
-    <string name="app_name">silverguide</string>
+    <string name="app_name">Club\'s location goulag</string>
     <string name="author_name">Clément Lévêque</string>
-    <string name="project_year">2021</string>
-    <string name="project_title">Historique de localisation</string>
+    <string name="project_year" translatable="false">2021</string>
+    <string name="project_title">Club\'s localization</string>
 
 
-    <string name="title">Message portrait</string>
-    <string name="texteToast">Bonjour</string>
-    <string name="sub">Page de localisation</string>
-    <string name="dialog_titre">Titre</string>
-    <string name="dialog_message">Choix du projet</string>
-    <string name="decline">Refuser</string>
-    <string name="accept">Accepter</string>
-    <string name="cancel">Annuler</string>
-    <string name="supporting_text">T\'es vraiment sûr de vouloir cliquer ici ?</string>
-    <string name="title_warning">The titre</string>
-    <string name="a_refuse">Vous avez refusé !</string>
-    <string name="a_accepte">Vous avez accepté !</string>
-    <string name="loc_accepte">Vous avez accepté la localisation !</string>
-    <string name="loc_refuse">Vous avez refusé la localisation !</string>
-    <string name="title_activity_splash">SplashActivity</string>
-    <string name="recyclerButton">Page du recyclerView</string>
+    <string name="title" translatable="false">Message portrait</string>
+    <string name="texteToast">Hello</string>
+    <string name="decline">Refuse</string>
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+    <string name="a_refuse">You refuse !</string>
+    <string name="a_accepte">You accept !</string>
+    <string name="loc_accepte">You accept location permission !</string>
+    <string name="loc_refuse">You denied location permission !</string>
+    <string name="settings_info">Informations</string>
+    <string name="settings_app_param">Application settings</string>
+    <string name="settings_loc_param">Location settings</string>
+    <string name="settings_contact">Send me an email</string>
+    <string name="settings_eseo_location">Position of ESEO</string>
+    <string name="settings_eseo_website">Website of ESEO</string>
 
 </resources>

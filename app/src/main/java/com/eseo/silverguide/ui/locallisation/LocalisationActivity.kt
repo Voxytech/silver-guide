@@ -9,6 +9,7 @@ import android.location.Location
 import android.location.LocationManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import com.eseo.silverguide.R
@@ -82,9 +83,14 @@ class LocalisationActivity : AppCompatActivity() {
     private fun geoCode(location: Location){
         val geocoder = Geocoder(this, Locale.getDefault())
         val results = geocoder.getFromLocation(location.latitude, location.longitude, 1)
+        val eseo = Location("")
+        eseo.longitude = -0.5508474733889329
+        eseo.latitude = 47.49341932098021
+
+        var distance = String.format("%.3f", location.distanceTo(eseo)/1000) + "km"
 
         if (results.isNotEmpty()) {
-            text_localisation.text = results[0].getAddressLine(0)
+            findViewById<TextView>(R.id.text_localisation).text = distance
         }
     }
 
@@ -93,7 +99,7 @@ class LocalisationActivity : AppCompatActivity() {
         if (hasPermission()) {
             val locationManager = applicationContext.getSystemService(LOCATION_SERVICE) as LocationManager?
             locationManager?.run {
-                locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER)?.run {
+               locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER)?.run {
                     geoCode(this)
                 }
             }

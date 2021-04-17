@@ -21,9 +21,10 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:text="Élement de la liste"
-        android:textSize="16sp"
-        android:drawableRight="@drawable/chevron_right_orange"
+        android:textSize="@dimen/TextSizeMedium"
+        android:drawableEnd="@drawable/chevron_right_orange"
         app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 

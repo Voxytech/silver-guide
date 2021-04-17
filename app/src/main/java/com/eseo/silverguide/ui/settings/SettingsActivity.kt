@@ -25,35 +25,30 @@ class SettingsActivity : AppCompatActivity() {
 
         rv.layoutManager = LinearLayoutManager(this)
         rv.adapter = Adapter(arrayOf(
-            SettingsItem("Paramètre Bluetooth", R.drawable.bluetooth) {
-                val targetIntent = Intent().apply {
-                    action = android.provider.Settings.ACTION_BLUETOOTH_SETTINGS
-                }
-                startActivity(targetIntent);
-            },
-            SettingsItem("Informations", R.drawable.info) {
+
+            SettingsItem(getString(R.string.settings_info), R.drawable.info) {
                 Toast.makeText(this@SettingsActivity, "Application développé par Clément Lévêque", Toast.LENGTH_SHORT).show()
             },
-            SettingsItem("Paramètres de l'application", R.drawable.app_settings) {
+            SettingsItem(getString(R.string.settings_app_param), R.drawable.app_settings) {
                 val targetIntent = Intent().apply {
                     action = android.provider.Settings.ACTION_APPLICATION_SETTINGS
                 }
                 startActivity(targetIntent);
             },
-            SettingsItem("Paramètres de localisation", R.drawable.location) {
+            SettingsItem(getString(R.string.settings_loc_param), R.drawable.location) {
                 val targetIntent = Intent().apply {
                     action = android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS
                 }
                 startActivity(targetIntent);
             },
-            SettingsItem("Me contacter par mail", R.drawable.mail) {
+            SettingsItem(getString(R.string.settings_contact), R.drawable.mail) {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("mailto:clement.leveque.147@gmail.com")));
             },
-            SettingsItem("Position de l'ESEO", R.drawable.location) {
+            SettingsItem(getString(R.string.settings_eseo_location), R.drawable.location) {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("geo:47.472822,-0.5621756")));
             },
 
-            SettingsItem("Site de l'ESEO", R.drawable.laptop) {
+            SettingsItem(getString(R.string.settings_eseo_website), R.drawable.laptop) {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.eseo.fr")));
             })) {
             //Toast.makeText(this@SettingsActivity, "Toast", Toast.LENGTH_SHORT).show()
