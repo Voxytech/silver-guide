@@ -7,6 +7,17 @@
     tools:context=".ui.localisation.LocalisationActivity">
 
     <TextView
+        android:id="@+id/localisation_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/localisation_title"
+        android:textSize="@dimen/TextSizeLarge"
+        android:layout_marginTop="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
         android:id="@+id/localisation_position"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

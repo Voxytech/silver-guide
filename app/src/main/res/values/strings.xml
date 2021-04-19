@@ -21,6 +21,7 @@
     <string name="settings_eseo_location">Position of ESEO</string>
     <string name="settings_eseo_website">Website of ESEO</string>
     <string name="settings_title">Settings</string>
+    <string name="settingPopupMessage">Application created by Clément Lévêque</string>
     <string name="history_title">History</string>
     <string name="historyItemName">List element</string>
     <string name="historyLogoDescription">Item history logo</string>
@@ -43,8 +44,17 @@
     <string name="historyButtonClear">Clear</string>
     <string name="historyButtonBack">Back</string>
     <string name="splashImageDesription">Image</string>
+    <string name="drone_title">My drone fleet</string>
 
     <string name="locationTextLocation">Your are %1$s away from ESEO</string>
     <string name="locationTextGPS" translatable="false">%1$f , %2$f</string>
+
+    <string name="droneImageDescription">Image description</string>
+    <string name="droneItemName" translatable="false">drone item name</string>
+    <string name="drone_bleu" translatable="false">Diatone GT-M 2018</string>
+    <string name="drone_rouge" translatable="false">Flosstyle</string>
+    <string name="drone_3D">Drone imprimé en 3D</string>
+    <string name="localisation_title">Distance to ESEO</string>
+
 
 </resources>

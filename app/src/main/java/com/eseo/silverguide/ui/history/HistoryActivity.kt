@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.eseo.silverguide.R
@@ -25,13 +26,15 @@ class HistoryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_history)
 
-        var rv = findViewById<RecyclerView>(R.id.rvHistory)
+        val rv = findViewById<RecyclerView>(R.id.rvHistory) // anciennement var
         rv.layoutManager = LinearLayoutManager(this)
+        rv.addItemDecoration(DividerItemDecoration(rv.context, DividerItemDecoration.VERTICAL))
         val locations = LocalPreferences.getInstance(this).getLocations()
         val historyItems = ArrayList<HistoryItem>() //tableau d'HistoryItem
         locations.forEach { location: LocationItem -> historyItems.add(HistoryItem(location))}
-
         rv.adapter = Adapter(historyItems.toTypedArray())
+
+
         findViewById<Button>(R.id.history_back).setOnClickListener {
             startActivity(MainActivity.getStartIntent(this))
         }

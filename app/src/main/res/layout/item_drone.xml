@@ -6,29 +6,29 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/logo"
-        android:contentDescription="@string/historyLogoDescription"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:id="@+id/image_drone"
+        android:contentDescription="@string/droneImageDescription"
         android:layout_marginStart="6dp"
-        android:layout_marginTop="6dp"
-        android:src="@drawable/location"
+        android:src="@drawable/fond_blanc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
 
     <TextView
-        android:id="@+id/title_history"
+        android:id="@+id/title_drone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="@string/historyItemName"
-        android:textSize="@dimen/TextSizeMedium"
         android:drawableEnd="@drawable/chevron_right_green"
-        app:layout_constraintStart_toEndOf="@+id/logo"
+        android:padding="10dp"
+        android:text="@string/droneItemName"
+        android:textSize="@dimen/TextSizeMedium"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/image_drone"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
