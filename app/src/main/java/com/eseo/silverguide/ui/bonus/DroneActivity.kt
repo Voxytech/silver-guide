@@ -52,7 +52,7 @@ class DroneActivity : AppCompatActivity() {
                     Toast.makeText(this@DroneActivity, "tondeuse de pilou", Toast.LENGTH_SHORT).show()
                 },
                 DroneItem(getString(R.string.drone_tom), R.drawable.drone_tom) {
-                    Toast.makeText(this@DroneActivity, "tondeuse de pilou", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@DroneActivity, "petit drone de tom", Toast.LENGTH_SHORT).show()
                 })){
 
         }
