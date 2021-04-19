@@ -13,11 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Silverguide">
-        <activity android:name=".ui.settings.SettingsItem"></activity>
+        <activity android:name=".ui.bonus.DroneActivity"/>
+        <activity android:name=".ui.history.HistoryActivity" />
         <activity android:name=".ui.settings.SettingsActivity" />
-        <activity android:name=".ui.locallisation.LocalisationActivity" />
-        <activity android:name=".ui.MainActivity" />
-        <activity android:name=".ui.SplashScreen">
+        <activity android:name=".ui.localisation.LocalisationActivity" />
+        <activity android:name=".ui.main.MainActivity" />
+        <activity android:name=".ui.splashscreen.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

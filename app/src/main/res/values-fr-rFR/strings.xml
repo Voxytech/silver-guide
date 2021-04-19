@@ -16,4 +16,29 @@
     <string name="a_accepte">Vous avez accepté !</string>
     <string name="a_refuse">Vous avez refusé !</string>
     <string name="settings_contact">Me contacter par mail</string>
+    <string name="settings_title">Paramètres</string>
+    <string name="history_title">Historique</string>
+    <string name="historyItemName">Élement de la liste</string>
+    <string name="historyLogoDescription">Logo de l\'item history</string>
+    <string name="settingsLogoDescription">Logo de l\'item settings</string>
+    <string name="locationTextUserAdress">Position de l\'utilisateur :</string>
+    <string name="locationTextUserCoordonate">Coordonnées GPS :</string>
+    <string name="locationTextAdress">Adresse</string>
+    <string name="locationTextDefaultGPS">- , -</string>
+    <string name="locationButtonGetPosition">Distance avec l\'ESEO</string>
+    <string name="locationButtonBack">Retour</string>
+    <string name="mainImageDescription">Image principale</string>
+    <string name="mainButtonGithub">Github</string>
+    <string name="mainButtonDistance">Distance</string>
+    <string name="mainButtonHistory">Historique</string>
+    <string name="mainButtonDrones">Drones</string>
+    <string name="droneButtonBack">Retour</string>
+    <string name="settingsItemName">Élement de la liste</string>
+    <string name="mainSettingsLogo">logo paramètres</string>
+    <string name="settingsButtonBack">Retour</string>
+    <string name="historyButtonClear">Effacer</string>
+    <string name="historyButtonBack">Retour</string>
+    <string name="splashImageDesription">Image</string>
+
+    <string name="locationTextLocation">Vous êtes à %1$s de l\'ESEO</string>
 </resources>

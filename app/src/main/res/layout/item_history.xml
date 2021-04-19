@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/logo"
+        android:contentDescription="@string/historyLogoDescription"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="6dp"
         android:layout_marginTop="6dp"
-        android:src="@drawable/logo_settings"
+        android:src="@drawable/location"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/title_history"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="Élement de la liste"
+        android:text="@string/historyItemName"
         android:textSize="@dimen/TextSizeMedium"
-        android:drawableEnd="@drawable/chevron_right_orange"
+        android:drawableEnd="@drawable/chevron_right_green"
         app:layout_constraintStart_toEndOf="@+id/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

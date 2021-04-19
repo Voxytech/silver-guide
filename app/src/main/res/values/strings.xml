@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Club\'s location goulag</string>
-    <string name="author_name">Clément Lévêque</string>
+    <string name="app_name">Club\'s location</string>
+    <string name="author_name" translatable="false">Clément Lévêque</string>
     <string name="project_year" translatable="false">2021</string>
     <string name="project_title">Club\'s localization</string>
 
@@ -20,5 +20,31 @@
     <string name="settings_contact">Send me an email</string>
     <string name="settings_eseo_location">Position of ESEO</string>
     <string name="settings_eseo_website">Website of ESEO</string>
+    <string name="settings_title">Settings</string>
+    <string name="history_title">History</string>
+    <string name="historyItemName">List element</string>
+    <string name="historyLogoDescription">Item history logo</string>
+    <string name="settingsLogoDescription">Item settings logo</string>
+    <string name="locationTextUserAdress">User position :</string>
+    <string name="locationTextUserCoordonate">GPS coordonates :</string>
+    <string name="locationTextAdress">Address</string>
+    <string name="locationTextDefaultGPS">- , -</string>
+    <string name="locationButtonGetPosition">Distance with ESEO :</string>
+    <string name="locationButtonBack">Back</string>
+    <string name="mainImageDescription">Main image</string>
+    <string name="mainButtonGithub">Github</string>
+    <string name="mainButtonDistance">Distance</string>
+    <string name="mainButtonHistory">History</string>
+    <string name="mainButtonDrones">Quadcopter</string>
+    <string name="droneButtonBack">Back</string>
+    <string name="settingsItemName">List element</string>
+    <string name="mainSettingsLogo">Settings logo</string>
+    <string name="settingsButtonBack">Back</string>
+    <string name="historyButtonClear">Clear</string>
+    <string name="historyButtonBack">Back</string>
+    <string name="splashImageDesription">Image</string>
+
+    <string name="locationTextLocation">Your are %1$s away from ESEO</string>
+    <string name="locationTextGPS" translatable="false">%1$f , %2$f</string>
 
 </resources>

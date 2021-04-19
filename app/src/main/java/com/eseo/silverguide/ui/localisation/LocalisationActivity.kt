@@ -1,6 +1,7 @@
-package com.eseo.silverguide.ui.locallisation
+package com.eseo.silverguide.ui.localisation
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -13,9 +14,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import com.eseo.silverguide.R
+import com.eseo.silverguide.data.LocalPreferences
 import com.eseo.silverguide.databinding.ActivityLocalisationBinding
-import com.eseo.silverguide.ui.MainActivity
-import kotlinx.android.synthetic.main.activity_localisation.*
+import com.eseo.silverguide.ui.main.MainActivity
 import java.util.*
 
 class LocalisationActivity : AppCompatActivity() {
@@ -27,7 +28,7 @@ class LocalisationActivity : AppCompatActivity() {
             return Intent(context, LocalisationActivity::class.java)
         }
 
-        const val PERMISSION_REQUEST_LOCATION = 9999;
+        const val PERMISSION_REQUEST_LOCATION = 9999
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,10 +39,10 @@ class LocalisationActivity : AppCompatActivity() {
         binding = ActivityLocalisationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.buttonLoc.setOnClickListener{
+        binding.localisationGetlocation.setOnClickListener{
             requestPermission()
         }
-        binding.buttonRetour.setOnClickListener{
+        binding.localisationRetour.setOnClickListener{
             startActivity(MainActivity.getStartIntent(this))
         }
 
@@ -84,17 +85,21 @@ class LocalisationActivity : AppCompatActivity() {
         val geocoder = Geocoder(this, Locale.getDefault())
         val results = geocoder.getFromLocation(location.latitude, location.longitude, 1)
         val eseo = Location("")
-        eseo.longitude = -0.5508474733889329
         eseo.latitude = 47.49341932098021
+        eseo.longitude = -0.5508474733889329
 
-        var distance = String.format("%.3f", location.distanceTo(eseo)/1000) + "km"
-
+        val distance = String.format("%.3f", location.distanceTo(eseo)/1000) + "km"
+        LocalPreferences.getInstance(this).addLocation(location)
         if (results.isNotEmpty()) {
-            findViewById<TextView>(R.id.text_localisation).text = distance
+            findViewById<TextView>(R.id.text_localisation).text = getString(R.string.locationTextLocation, distance)
+            findViewById<TextView>(R.id.text_gps).text = getString(R.string.locationTextGPS, location.latitude, location.longitude)
+            //findViewById<TextView>(R.id.text_localisation).text = location
+            //findViewById<TextView>(R.id.text_gps).text = location.latitude.toString() + " , " + location.longitude.toString()
         }
     }
 
     //Function pour obtenir la localisation de l'utilisateur
+    @SuppressLint("MissingPermission")
     private fun getLocation() {
         if (hasPermission()) {
             val locationManager = applicationContext.getSystemService(LOCATION_SERVICE) as LocationManager?

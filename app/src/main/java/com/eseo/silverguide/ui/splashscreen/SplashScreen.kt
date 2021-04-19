@@ -1,10 +1,11 @@
-package com.eseo.silverguide.ui
+package com.eseo.silverguide.ui.splashscreen
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import com.eseo.silverguide.R
+import com.eseo.silverguide.ui.main.MainActivity
 
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

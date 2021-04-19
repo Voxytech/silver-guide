@@ -26,7 +26,7 @@ class Adapter(private val deviceList: Array<SettingsItem>, private val onClick: 
 
     // Retourne une « vue » / « layout » pour chaque élément de la liste
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_list, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_settings, parent, false)
         return ViewHolder(view)
     }
 

@@ -4,38 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.locallisation.LocalisationActivity">
+    tools:context=".ui.localisation.LocalisationActivity">
 
-    <Button
-        android:id="@+id/button_loc"
+    <TextView
+        android:id="@+id/localisation_position"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Distance avec l'Eseo"
+        android:text="@string/locationTextUserAdress"
+        android:textSize="@dimen/TextSizeMedium"
+        app:layout_constraintBottom_toTopOf="@id/localisation_getlocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/text_localisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locationTextAdress"
+        android:textSize="@dimen/TextSizeMedium"
+        app:layout_constraintTop_toBottomOf="@id/localisation_position"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/localisation_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locationTextUserCoordonate"
+        android:textSize="@dimen/TextSizeMedium"
+        app:layout_constraintTop_toBottomOf="@id/localisation_position"
+        app:layout_constraintBottom_toTopOf="@id/localisation_getlocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/text_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locationTextDefaultGPS"
+        android:textSize="@dimen/TextSizeMedium"
+        app:layout_constraintTop_toBottomOf="@id/localisation_gps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/localisation_getlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locationButtonGetPosition"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.8" />
     <Button
-        android:id="@+id/button_retour"
-        android:layout_width="wrap_content"
+        android:id="@+id/localisation_retour"
+        android:text="@string/locationButtonBack"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Retour"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="10sp"
+        android:layout_marginBottom="10sp"
+        />
 
-    <TextView
-        android:id="@+id/text_localisation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Position de l'utilisateur"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

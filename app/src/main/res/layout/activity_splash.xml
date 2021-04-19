@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.SplashScreen">
+    android:background="@drawable/background"
+    tools:context=".ui.splashscreen.SplashScreen">
 
     <TextView
         android:id="@+id/project_title"
@@ -24,7 +25,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
         android:src="@drawable/image_loc"
-        android:contentDescription="image"
+        android:contentDescription="@string/splashImageDesription"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/project_title" />
 

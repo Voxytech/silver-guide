@@ -4,31 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.settings.SettingsActivity">
+    tools:context=".ui.bonus.DroneActivity">
 
     <TextView
-        android:id="@+id/settings_title"
+        android:id="@+id/project_title"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="@string/settings_title"
+        android:text="@string/project_title"
         android:textSize="@dimen/TextSizeLarge"
-        android:layout_marginTop="10sp"
+        android:layout_marginTop="30sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvSettings"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/settings_title"
-        android:layout_marginTop="10sp"
-        tools:listitem="@layout/item_settings" />
-
     <Button
-        android:id="@+id/settings_back"
-        android:text="@string/settingsButtonBack"
+        android:id="@+id/drone_back"
+        android:text="@string/droneButtonBack"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
