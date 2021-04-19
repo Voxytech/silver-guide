@@ -20,8 +20,6 @@ import com.eseo.silverguide.ui.settings.SettingsItem
 
 class DroneActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityDroneBinding // <-- Référence à notre ViewBinding
-
     companion object {
         fun getStartIntent(context: Context): Intent {
             return Intent(context, DroneActivity::class.java)
