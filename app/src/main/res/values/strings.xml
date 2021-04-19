@@ -55,7 +55,7 @@
     <string name="drone_rouge" translatable="false">Flosstyle</string>
     <string name="drone_3D">3D printed drone</string>
     <string name="drone_pilou">Pilou\'s lawnmower</string>
-    <string name="drone_antho">anthony\'s future drone</string>
+    <string name="drone_antho">Anthony\'s future drone</string>
     <string name="drone_tom">Tom\'s little drone</string>
 
     <string name="localisation_title">Distance to ESEO</string>
