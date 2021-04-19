@@ -9,8 +9,8 @@
         android:contentDescription="@string/droneImageDescription"
         android:layout_marginStart="6dp"
         android:src="@drawable/fond_blanc"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
