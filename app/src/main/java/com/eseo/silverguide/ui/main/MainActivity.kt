@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(HistoryActivity.getStartIntent(this))
             }
             else{
-                Toast.makeText(this@MainActivity, "Aucune position dans l'historique", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, getString(R.string.mainWarningNoHistory), Toast.LENGTH_SHORT).show()
             }
         }
 

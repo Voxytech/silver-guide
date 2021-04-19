@@ -55,6 +55,7 @@
     <string name="drone_rouge" translatable="false">Flosstyle</string>
     <string name="drone_3D">Drone imprimé en 3D</string>
     <string name="localisation_title">Distance to ESEO</string>
+    <string name="mainWarningNoHistory">No positions saved in history</string>
 
 
 </resources>

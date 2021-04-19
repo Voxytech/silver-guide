@@ -46,6 +46,7 @@
     <string name="mainButtonHistory">Historique</string>
     <string name="mainButtonDrones">Drones</string>
     <string name="mainSettingsLogo">logo paramètres</string>
+    <string name="mainWarningNoHistory">Aucune position dans l\'historique</string>
 
     <string name="droneButtonBack">Retour</string>
     <string name="droneImageDescription">Image description</string>
